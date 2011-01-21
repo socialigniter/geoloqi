@@ -1,0 +1,1 @@
+<li><a class="sidebar_icon" href="<?= base_url() ?>home/geoloqi/nearby"><img src="<?= $this_module_assets ?>geoloqi_24.png"><span>Geoloqi</span></a></li>
