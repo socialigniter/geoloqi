@@ -1,4 +1,4 @@
-<form name="settings" method="post" action="<?= base_url() ?>settings/update" enctype="multipart/form-data">
+<form name="settings_update" id="settings_update" method="post" action="<?= base_url() ?>api/settings/modify" enctype="multipart/form-data">
 
 <div class="content_wrap_inner">
 	
@@ -11,12 +11,14 @@
 
 	<p>GeoLoqi is a private location sharing application <a href="https://geoloqi.com" target="_blank">read about it</a></p>
 				
-	<p><input type="text" name="oauth_token" value="<?= $settings['geoloqi']['oauth_token'] ?>"> OAuth Token</p> 
-
-	<input type="hidden" name="module" value="geoloqi">
+	<p><input type="text" name="api_version" value="<?= $settings['geoloqi']['api_version'] ?>"> Api Version</p>			
+				
+	<p><input type="text" name="oauth2_token" value="<?= $settings['geoloqi']['oauth2_token'] ?>"> OAuth Token</p> 
 
 	<p><input type="submit" name="save" value="Save" /></p>
 
 </div>
 
 </form>
+
+<?= $shared_ajax ?>

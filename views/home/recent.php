@@ -1,4 +1,4 @@
-<h3>Your Most Recent Positions</h3>
+<h3>Your Recent Positions</h3>
 
 <div class="map"></div>
 
